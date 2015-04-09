@@ -19,10 +19,22 @@ Below the include we'll start the class:
 `$Thermostat = new Thermostat('Username', 'password');`
 
 Then we want to read the current temperature:
-> Please note: temperature1 is the current temperature and temperature2 is the temperature you can set.
->
-> By default we use temperature2.
 
 `echo $Thermostat->getTemp();`
+
+> Please note, ICY is using to variables for the temperature:
+>
+> temperature1 is returning the current temperature from the room.
+> temperature2 is returning the temperature that was set.
+
+For reading the current room temperature we use:
+
+`echo $Thermostat->getTemp('temperature1');
+
+To change the temperature we use the functon setTemp('temp') as follow:
+
+`echo $Thermostat->setTemp('18');
+
+> Please note, we've just changed the temperature to 18 degrees, for example 21: setTemp('21');
 
 
