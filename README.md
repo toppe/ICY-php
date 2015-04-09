@@ -25,15 +25,16 @@ Then we want to read the current temperature:
 > Please note, ICY is using to variables for the temperature:
 >
 > temperature1 is returning the current temperature from the room.
+
 > temperature2 is returning the temperature that was set.
 
 For reading the current room temperature we use:
 
-`echo $Thermostat->getTemp('temperature1');
+`echo $Thermostat->getTemp('temperature1');`
 
 To change the temperature we use the functon setTemp('temp') as follow:
 
-`echo $Thermostat->setTemp('18');
+`echo $Thermostat->setTemp('18');`
 
 > Please note, we've just changed the temperature to 18 degrees, for example 21: setTemp('21');
 
