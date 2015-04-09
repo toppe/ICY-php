@@ -38,4 +38,10 @@ To change the temperature we use the functon setTemp('temp') as follow:
 
 > Please note, we've just changed the temperature to 18 degrees, for example 21: setTemp('21');
 
+To view the date and time that the thermostat has "knocked" to the servers:
+
+`echo $Thermostat->lastSeen();`
+
+Please see the "examples" folder for some examples
+
 
