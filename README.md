@@ -20,6 +20,7 @@ Below the include we'll start the class:
 
 Then we want to read the current temperature:
 > Please note: temperature1 is the current temperature and temperature2 is the temperature you can set.
+>
 > By default we use temperature2.
 
 `echo $Thermostat->getTemp();`
